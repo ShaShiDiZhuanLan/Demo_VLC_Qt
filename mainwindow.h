@@ -32,19 +32,19 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
-    bool load(const QString &filepath);
-    void play();
-    void pause();
-    void stop();
-    bool loadVlc(const QString &filepath);
-    void freeVlc();
+    bool load(const QString &filepath);//加载
+    void play();//播放
+    void pause();//暂停
+    void stop();//停止
+    bool loadVlc(const QString &filepath);//加载
+    void freeVlc();//释放
 
 protected:
-    static void vlcEvents(const libvlc_event_t *ev, void *param);
+    static void vlcEvents(const libvlc_event_t *ev, void *param);//VLC事件
 private slots:
-    void on_pushButton_clicked();
-    void on_pB_Stop_clicked();
-    void on_pB_Open_clicked();
+    void on_pushButton_clicked();//播放/暂停
+    void on_pB_Stop_clicked();//停止
+    void on_pB_Open_clicked();//打开文件
 
 private:
     Ui::MainWindow *ui;

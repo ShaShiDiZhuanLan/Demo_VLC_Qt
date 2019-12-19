@@ -25,6 +25,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+//加载
 bool MainWindow::load(const QString &filepath)
 {
     if(filepath.isEmpty()){
@@ -43,6 +44,7 @@ bool MainWindow::load(const QString &filepath)
     return true;
 }
 
+//播放
 void MainWindow::play()
 {
     if(libvlc_Ended == libvlc_media_get_state(m_media)){
@@ -51,6 +53,7 @@ void MainWindow::play()
     libvlc_media_player_play(m_mediaPlayer);
 }
 
+//暂停
 void MainWindow::pause()
 {
     if((bool)libvlc_media_player_is_playing(m_mediaPlayer)){
@@ -59,12 +62,14 @@ void MainWindow::pause()
     }
 }
 
+//停止
 void MainWindow::stop()
 {
     m_bPlaying = false;
     libvlc_media_player_stop(m_mediaPlayer);
 }
 
+//加载
 bool MainWindow::loadVlc(const QString &filepath)
 {
     m_vlcInstance = libvlc_new(0, NULL);
@@ -90,6 +95,8 @@ bool MainWindow::loadVlc(const QString &filepath)
     libvlc_media_player_set_hwnd(m_mediaPlayer, (void *)ui->label->winId());
     return true;
 }
+
+//VLC事件
 void MainWindow::vlcEvents(const libvlc_event_t *ev, void *param)
 {
     Q_UNUSED(param);
@@ -109,6 +116,8 @@ void MainWindow::vlcEvents(const libvlc_event_t *ev, void *param)
         break;
     }
 }
+
+//释放
 void MainWindow::freeVlc()
 {
     if(m_media){
