@@ -10,5 +10,7 @@ https://shazhenyu.blog.csdn.net/article/details/72673677 <BR/>
 <BR/>
 # 3、使用方法
 ## 3.1、使用前
-先解压vlc_win32.zip，再使用哦<BR/>
+使用前先解压vlc_win32.zip，再使用哦~<BR/>
 ## 3.2、软件使用过程
+![image](https://github.com/ShaShiDiZhuanLan/Demo_VLC_Qt/blob/master/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E1.png)
+![image](https://github.com/ShaShiDiZhuanLan/Demo_VLC_Qt/blob/master/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E2.png)
