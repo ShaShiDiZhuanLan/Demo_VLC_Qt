@@ -6,7 +6,7 @@ Qt+VLC简单的使用显示视频示例，vlc播放视频，要比QMediaPlayer�
 创建时间：2017-5-23<BR/>
 最后一次更新时间：2019-12-5<BR/>
 CSDN博客地址：Qt+VLC简单的使用显示视频Demo <BR/>
-https://shazhenyu.blog.csdn.net/article/details/72673677 <BR/>
+此项目博客地址：https://shazhenyu.blog.csdn.net/article/details/72673677 <BR/>
 <BR/>
 # 3、使用方法
 ## 3.1、使用前
