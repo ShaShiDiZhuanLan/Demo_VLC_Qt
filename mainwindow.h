@@ -6,6 +6,7 @@
 # UpdateTime: 2019-12-19
 # Info: Qt+VLC简单的使用显示视频Demo
 # Url:https://shazhenyu.blog.csdn.net/article/details/72673677
+# Github:https://github.com/ShaShiDiZhuanLan/Demo_VLC_Qt
 #
 #-------------------------------------------------*/
 #ifndef MAINWINDOW_H
